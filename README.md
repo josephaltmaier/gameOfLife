@@ -8,3 +8,5 @@ To run:
   * run ```go get -d ./...```
   * run ```go run .```
   * edit main.go to try different implementations or initial states
+
+![](bench.png?raw=true)
