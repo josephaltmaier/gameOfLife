@@ -44,20 +44,20 @@ func main() {
 	ebiten.SetMaxTPS(10)
 
 	//initialState := randomInput(testWidth, testHeight, .5)
-	//initialState, err := parseInput(pulsar)
-	//if err != nil {
-	//	panic(err)
-	//}
-	//if err := ebiten.RunGame(newGame(initialState)); err != nil {
-	//	panic(err)
-	//}
-
-	//initialState := randomInputArray(testWidth, testHeight, .5)
-	initialState, err := parseInputArray(testWidth, testHeight, pulsar)
+	initialState, err := parseInput(pulsar)
 	if err != nil {
 		panic(err)
 	}
-	if err := ebiten.RunGame(newArrayGame(initialState)); err != nil {
+	if err := ebiten.RunGame(newGame(initialState)); err != nil {
 		panic(err)
 	}
+
+	//initialState := randomInputArray(testWidth, testHeight, .5)
+	//initialState, err := parseInputArray(testWidth, testHeight, pulsar)
+	//if err != nil {
+	//	panic(err)
+	//}
+	//if err := ebiten.RunGame(newArrayGame(initialState)); err != nil {
+	//	panic(err)
+	//}
 }
